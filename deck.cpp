@@ -1,6 +1,7 @@
 #include "deck.h"
 #include "card.h"
 #include <cstdlib> //for rand int
+#include <ctime>   // for time()
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -29,15 +30,26 @@ void Deck::display() {
   for (int i = 0; i < 52; i++)
     {
       mainDeck[i].display();
-      cout << ", ";
+
+      if (i == 12 || i == 25 || i == 38 || i == 51) 
+      {
+        cout << endl;
+      }
+      else if (i != 52 ) 
+      {
+        cout << ", ";
+      }
+
     }
     cout << endl;
 }
 
 void Deck::shuffle() {
+  int randPos = 0;
+  srand(time(nullptr));
   for (int i = 0; i < 52; i++)
     {
-      int randPos = rand() % 52; //cant use? 
+      randPos = rand() % 52;
       swap(mainDeck[i], mainDeck[randPos]); //std::swap()
     }
 }

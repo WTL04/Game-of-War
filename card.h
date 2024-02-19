@@ -21,4 +21,4 @@ class Card
 
 // 'C' for Clubs, 'D' for Diamonds, 'H' for Hearts, 'S' for Spades
 
-// '2' to '9', 'T' for 10, 'J' for Jack, 'Q' for Queen, 'K' for King, 'A' for Ace
+// '2' to '9', 'T' for 10, 'J' for Jack, 'Q' for Queen, 'K' for King, 'A' for Ace  

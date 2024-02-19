@@ -1,6 +1,6 @@
 // William Luu
 // Class (CECS 325-02)
-// Program 1 - War
+// Program 1 - Game of War
 // 2/15/2024
 //I certify that this program is my own original work. I did not copy any part of this program from any other source. I further certify that I typed each and every line of code in this program.
 
